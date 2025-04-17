@@ -8,8 +8,43 @@ import Main from './Main';
 // Figures
 import star from '../../svg/icon-star.svg';
 
+// API
+import api from '../../services/api';
+
+// Hooks
+import { useState, useEffect } from 'react';
+
 
 const Home = () => {
+
+    // Variáveis de estado
+    const [main, setMain] = useState([]);
+    const [mostseen, setMostseen] = useState([]);
+    const [banner, setBanner] = useState([]);
+
+    // Faça isso quando o componente montar
+    useEffect(() => {
+
+        // Requisição para posts com nota star = 5
+        api.get('/posts?star=5&_limit=2&_order=desc')
+        .then((response) => {
+            setMain(response.data);
+        })
+
+        // Requisição para Banner
+        api.get('/posts?_sort=date&_order=desc&_limit=1')
+        .then((response) => {
+            setBanner(response.data);
+        })
+
+        // Posts Mais vistos
+        api.get('/posts?_limit=3')
+        .then((response) => {
+            setMostseen(response.data);
+        })
+
+    }, [])
+
     return (
         <>
             <Hero />
@@ -26,8 +61,11 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="grid-7">
-                        <Main />
-                        <Main />
+                        {
+                            main.map((item) => {
+                                return <Main  key={item.id} content={item} />
+                            })
+                        }
                     </div>
                 </div>
             </section>
