@@ -1,17 +1,19 @@
 import logo from '../../svg/blog-logo.svg'
 
+// Link
+import { Link } from "react-router-dom";
+
 const Header = () => {
     return (
         <>
             <header className="py-1 px-2">
                 <nav>
                     <div className="logo">
-                        <a href=""><img src={logo} alt="" /></a>
+                        <Link to="/"><img src={logo} alt="" /></Link>
                     </div>
                     <ul className="menu">
-                        <li><a href="" className="p-1">Categorias</a></li>
-                        <li><a href="" className="p-1">Sobre</a></li>
-                        <li><a href="" className="p-1">Contato</a></li>
+                        <li><Link to="/about" className="p-1">Sobre</Link></li>
+                        <li><Link to="/contact" className="p-1">Contato</Link></li>
                     </ul>
                 </nav>
                 <div className="bx"></div>
@@ -24,10 +26,10 @@ const Header = () => {
                         
                     </div>
                     <div className="cta-desktop ml-3">
-                        <a href="" className="btn">Login</a>
+                        <Link to="/login" className="btn">Login</Link>
                     </div>
                     <div className="cta-mobile mr-1">
-                        <a href="" className="link">Login</a>
+                        <Link to="/login" className="link">Login</Link>
                     </div>
                 </div>
             </header>
@@ -35,9 +37,8 @@ const Header = () => {
             <div className="relative">
                 <div className="menu-mobile">
                     <ul className="nav-mobile">
-                        <li><a href="#" className="link-menu-mobile">Categorias</a></li>
-                        <li><a href="#" className="link-menu-mobile">Sobre</a></li>
-                        <li><a href="#" className="link-menu-mobile">Contato</a></li>
+                        <li><Link to="/about" className="link-menu-mobile">Sobre</Link></li>
+                        <li><Link to="/contact" className="link-menu-mobile">Contato</Link></li>
                         <li className="py-2 pl-2">
                             <form className="flex">
                                 <input type="text" name="search" id="" placeholder="Buscar..." />

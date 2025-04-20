@@ -1293,6 +1293,7 @@
 
 .h0 {
   font-family: 'Rubik', sans-serif;
+  display: inline-flex;
   font-size: 120px;
   line-height: 120%;
   font-weight: 500;

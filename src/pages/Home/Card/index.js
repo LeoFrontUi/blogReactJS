@@ -1,24 +1,25 @@
-const Card = () => {
+import { Link } from "react-router-dom";
+
+const Card = ({content}) => {
     return (
         <>
             <div className="grid-4 card hidden p-0">
                 <div className="thumb hidden">
-                    <a href="" className="p-0">
-                        <img src="img/01.png" alt="" />
-                    </a>
+                    <Link to={"/post/" + content.id} className="p-0">
+                        <img src={content.imageUrl} alt="" />
+                    </Link>
                 </div>
                 <div className="p-2">
-                    <h6 className="color-gray">01 NOV 2021</h6>
-                    <h6 className="uppercase color-primary">TECNOLOGIA</h6>
-                    <a href="" className="link-title">
-                        <h4 className="mt-1">Os novos macbooks M1</h4>
-                    </a>
+                    <h6 className="color-gray">{content.date}</h6>
+                    <h6 className="uppercase color-primary">{content.category}</h6>
+                    <Link to={"/post/" + content.id} className="link-title">
+                        <h4 className="mt-1">{content.title}</h4>
+                    </Link>
                     
                     <p className="my-2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Ornare urna pharetra ut ac, pellentesque.
+                        {content.resume}
                     </p>
-                    <a href="" className="link p-0">Ler mais</a>
+                    <Link to={"/post/" + content.id} className="link p-0">Ler mais</Link>
                 </div>
             </div>
         </>

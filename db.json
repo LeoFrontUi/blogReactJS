@@ -3,7 +3,7 @@
     {
       "id": 1,
       "id_user": 1,
-      "date": "14 NOV 2021",
+      "date": "2021-11-14",
       "imageUrl": "https://nyousefali.com.br/blog/img/06.png",
       "category": "games",
       "title": "O que tem de novo no PS5? Tudo o que você precisa saber.",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "id_user": 1,
-      "date": "18 SET 2021",
+      "date": "2021-09-18",
       "imageUrl": "https://nyousefali.com.br/blog/img/07.png",
       "category": "tecnologia",
       "title": "Novos processadores da 12° geração da intel chegaram.",
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "id_user": 3,
-      "date": "01 NOV 2021",
+      "date": "2021-11-01",
       "imageUrl": "https://nyousefali.com.br/blog/img/09.png",
       "category": "fotografia",
       "title": "Qual a melhor câmera CxB para fotos e vídeos em 2021?",
@@ -45,7 +45,7 @@
     {
       "id": 4,
       "id_user": 3,
-      "date": "10 OUT 2021",
+      "date": "2021-10-10",
       "imageUrl": "https://nyousefali.com.br/blog/img/03.png",
       "category": "cinema",
       "title": "Top 10 Filmes de 2021.",
@@ -59,7 +59,7 @@
     {
       "id": 5,
       "id_user": 2,
-      "date": "07 OUT 2021",
+      "date": "2021-10-07",
       "imageUrl": "https://nyousefali.com.br/blog/img/01.png",
       "category": "tecnologia",
       "title": "Novos Mackbooks em 2021.",
@@ -73,7 +73,7 @@
     {
       "id": 6,
       "id_user": 3,
-      "date": "07 OUT 2021",
+      "date": "2021-10-07",
       "imageUrl": "https://nyousefali.com.br/blog/img/02.png",
       "category": "tecnologia",
       "title": "Air Pods 3° geração vs. Air Pods Pro",
@@ -87,7 +87,7 @@
     {
       "id": 7,
       "id_user": 1,
-      "date": "07 NOV 2021",
+      "date": "2021-11-07",
       "imageUrl": "https://nyousefali.com.br/blog/img/05.png",
       "category": "tecnologia",
       "title": "Ainda vale a pena o PS4 Pro em 2021?",
@@ -101,7 +101,7 @@
     {
       "id": 8,
       "id_user": 1,
-      "date": "22 NOV 2021",
+      "date": "2021-11-22",
       "imageUrl": "https://nyousefali.com.br/blog/img/08.png",
       "category": "tecnologia",
       "title": "PC Gamer em 2021? Está muito caro.",
