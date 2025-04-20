@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Navigate, BrowserRouter } from "react-router-dom";
 
+// ScrollTop
+import ScrollTop from "pages/ScrollTop";
+
 // Pages
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -14,6 +17,7 @@ const Paths = () => {
     return (
         <>
             <BrowserRouter>
+                <ScrollTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
